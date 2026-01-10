@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="F1.png" alt="F1 Logo">
+        <nav>
+            <a href="#welcome">Home</a>
+            <a href="#news">News</a>
+            <a href="#drivers">Drivers</a>
+            <a href="#teams">Teams</a>
+            <a href="#catalog">Catalog</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#results">Results</a>
+        </nav>
+        <button id="theme-toggle" type="button">Light Mode</button>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <main>
+                <section id="welcome">
+                    <h1>Welcome to the World of Formula 1</h1>
+                    <p>Stay updated with the latest news, race results, and driver standings in the thrilling world of Formula 1 racing.</p>
+                    <button id="watch-button" type="button">Watch Live Races</button>
+                </section>
+
+                <section id="news">
+                    <h1>Latest News</h1>
+                    <article>
+                        <div>
+                            <h3>Grand Prix Highlights</h3>
+                            <p>Catch up on the highlights from the latest Grand Prix race</p>
+                        </div>
+                        <img src="ln4.avif" alt="Grand Prix Highlights">
+                    </article>
+
+                    <article>
+                        <div>
+                            <h3>Driver Transfers</h3>
+                            <p>Get the latest updates on driver transfers for the upcoming season</p>
+                        </div>
+                        <img src="max_hadjar.avif" alt="Driver Transfers">
+                    </article>
+                </section>
+
+                <section id="drivers">
+                    <h1>Drivers</h1>
+
+                    <input id="driver-search" class="search" type="text" placeholder="Search driver... (Max, Lewis, Charles)" />
+
+                    <div class="grid">
+                        <a href="driver.html?id=verstappen">
+                            <div class="card-tile" data-driver="Max Verstappen">
+                                <h3>Max Verstappen</h3>
+                                <p>Team: Red Bull</p>
+                                <span class="tag">#3</span>
+                            </div>
+                        </a>
+                        
+                        <a href="driver.html?id=leclerc">
+                            <div class="card-tile" data-driver="Charles Leclerc">
+                                <h3>Charles Leclerc</h3>
+                                <p>Team: Ferrari</p>
+                                <span class="tag">#16</span>
+                            </div>
+                        </a>
+
+                        <a href="driver.html?id=norris">
+                            <div class="card-tile" data-driver="Lando Norris">
+                                <h3>Lando Norris</h3>
+                                <p>Team: McLaren</p>
+                                <span class="tag">#1</span>
+                            </div>
+                        </a>
+
+                        <a href="driver.html?id=piastri">
+                            <div class="card-tile" data-driver="Oscar Piastri">
+                                <h3>Oscar Piastri</h3>
+                                <p>Team: McLaren</p>
+                                <span class="tag">#81</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=russell">
+                            <div class="card-tile" data-driver="George Russell">
+                                <h3>George Russell</h3>
+                                <p>Team: Mercedes</p>
+                                <span class="tag">#63</span>
+                            </div>
+                        </a>
+
+                        <a href="driver.html?id=hamilton">
+                            <div class="card-tile" data-driver="Lewis Hamilton">
+                                <h3>Lewis Hamilton</h3>
+                                <p>Team: Ferrari</p>
+                                <span class="tag">#44</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=alonso">
+                            <div class="card-tile" data-driver="Fernando Alonso">
+                                <h3>Fernando Alonso</h3>
+                                <p>Team: Aston Martin</p>
+                                <span class="tag">#14</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=antonelli">
+                            <div class="card-tile" data-driver="Kimi Antonelli">
+                                <h3>Kimi Antonelli</h3>
+                                <p>Team: Mercedes</p>
+                                <span class="tag">#12</span>
+                            </div>
+                        </a>
+
+                        <a href="driver.html?id=stroll">
+                            <div class="card-tile" data-driver="Lance Stroll">
+                                <h3>Lance Stroll</h3>
+                                <p>Team: Aston Martin</p>
+                                <span class="tag">#18</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=ocon">
+                            <div class="card-tile" data-driver="Esteban Ocon">
+                                <h3>Esteban Ocon</h3>
+                                <p>Team: Haas</p>
+                                <span class="tag">#31</span>
+                            </div>
+                        </a>
+
+                        <a href="driver.html?id=gasly">
+                            <div class="card-tile" data-driver="Pierre Gasly">
+                                <h3>Pierre Gasly</h3>
+                                <p>Team: Alpine</p>
+                                <span class="tag">#10</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=lindblad">
+                            <div class="card-tile" data-driver="Arvid Lindblad">
+                                <h3>Arvid Lindblad</h3>
+                                <p>Team: VCARB</p>
+                                <span class="tag">#41</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=hadjar">
+                            <div class="card-tile" data-driver="Isack Hadjar">
+                                <h3>Isack Hadjar</h3>
+                                <p>Team: Red Bull</p>
+                                <span class="tag">#6</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=bearman">
+                            <div class="card-tile" data-driver="Oliver Bearman">
+                                <h3>Oliver Bearman</h3>
+                                <p>Team: Haas</p>
+                                <span class="tag">#87</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=hulkenberg">
+                            <div class="card-tile" data-driver="Nico Hülkenberg">
+                                <h3>Nico Hülkenberg</h3>
+                                <p>Team: Audi</p>
+                                <span class="tag">#27</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=bortoleto">
+                            <div class="card-tile" data-driver="Gabriel Bortoleto">
+                                <h3>Gabriel Bortoleto</h3>
+                                <p>Team: Audi</p>
+                                <span class="tag">#5</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=colapinto">
+                            <div class="card-tile" data-driver="Franco Colapinto">
+                                <h3>Franco Colapinto</h3>
+                                <p>Team: Alpine</p>
+                                <span class="tag">#43</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=lawson">
+                            <div class="card-tile" data-driver="Liam Lawson">
+                                <h3>Liam Lawson</h3>
+                                <p>Team: VCARB</p>
+                                <span class="tag">#30</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=albon">
+                            <div class="card-tile" data-driver="Alex Albon">
+                                <h3>Alex Albon</h3>
+                                <p>Team: Williams</p>
+                                <span class="tag">#23</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=sainz">
+                            <div class="card-tile" data-driver="Carlos Sainz Jr.">
+                                <h3>Carlos Sainz Jr.</h3>
+                                <p>Team: Williams</p>
+                                <span class="tag">#55</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=bottas">
+                            <div class="card-tile" data-driver="Vallteri Bottas">
+                                <h3>Vallteri Bottas</h3>
+                                <p>Team: Cadillac</p>
+                                <span class="tag">#77</span>
+                            </div>
+                        </a>
+                        <a href="driver.html?id=perez">
+                            <div class="card-tile" data-driver="Sergio Perez">
+                                <h3>Sergio Perez</h3>
+                                <p>Team: Cadillac</p>
+                                <span class="tag">#11</span>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <section id="teams">
+                    <h1>Teams</h1>
+
+                    <input id="team-search" class="search" type="text" placeholder="Search team... (Ferrari, Red Bull)" />
+
+                    <div class="grid teams-grid">
+                        <a class="card-link" href="team.html?id=redbull" data-team="Red Bull">
+                            <div class="card-tile team-tile">
+                                <img class="team-logo" src="logos/redbull.png" alt="Red Bull logo">
+                                <div>
+                                    <h3>Red Bull</h3>
+                                    <p>Fastest package</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="card-link" href="team.html?id=ferrari" data-team="Ferrari">
+                            <div class="card-tile team-tile">
+                                <img class="team-logo" src="logos/ferrari.png" alt="Ferrari logo">
+                                <div>
+                                    <h3>Ferrari</h3>
+                                    <p>Next year is our year, trust</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="card-link" href="team.html?id=mercedes" data-team="Mercedes">
+                                <div class="card-tile team-tile">
+                                <img class="team-logo" src="logos/mercedes.png" alt="Mercedes logo">
+                                <div>
+                                    <h3>Mercedes</h3>
+                                    <p>Consistency & tech</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="card-link" href="team.html?id=mclaren" data-team="McLaren">
+                            <div class="card-tile team-tile">
+                                <img class="team-logo" src="logos/mclaren.png" alt="McLaren logo">
+                                <div>
+                                    <h3>McLaren</h3>
+                                    <p>Strong upgrades</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="card-link" href="team.html?id=astonmartin" data-team="Aston Martin">
+                            <div class="card-tile team-tile">
+                                <img class="team-logo" src="logos/astonmartin.png" alt="Aston Martin logo">
+                                <div>
+                                    <h3>Aston Martin</h3>
+                                    <p>High potential</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="card-link" href="team.html?id=alpine" data-team="Alpine">
+                            <div class="card-tile team-tile">
+                                <img class="team-logo" src="logos/alpine.png" alt="Alpine logo">
+                                <div>
+                                    <h3>Alpine</h3>
+                                    <p>Fighting midfield</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="card-link" href="team.html?id=williams" data-team="Williams">
+                            <div class="card-tile team-tile">
+                                <img class="team-logo" src="logos/williams.png" alt="Williams logo">
+                                <div>
+                                    <h3>Williams</h3>
+                                    <p>Young & fast</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="card-link" href="team.html?id=rb" data-team="RB">
+                            <div class="card-tile team-tile">
+                                <img class="team-logo" src="logos/rb.png" alt="RB logo">
+                                <div>
+                                    <h3>VCARB</h3>
+                                    <p>Strong rookies</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="card-link" href="team.html?id=haas" data-team="Haas">
+                            <div class="card-tile team-tile">
+                               <img class="team-logo" src="logos/haas.png" alt="Haas logo">
+                                <div>
+                                    <h3>Haas</h3>
+                                    <p>Fighting hard</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="card-link" href="team.html?id=audi" data-team="Audi">
+                            <div class="card-tile team-tile">
+                                <img class="team-logo" src="logos/audi.png" alt="Audi logo">
+                                <div>
+                                    <h3>Audi</h3>
+                                    <p>First season</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="card-link" href="team.html?id=cadillac" data-team="Cadillac">
+                            <div class="card-tile team-tile">
+                                <img class="team-logo" src="logos/cadillac.png" alt="Cadillac logo">
+                                <div>
+                                    <h3>Cadillac</h3>
+                                    <p>New team</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section id="catalog" class="container">
+                    <h1>Catalog</h1>
+
+                    <div class="catalog-controls">
+                        <select id="cat-filter" class="select">
+                            <option value="all">All categories</option>
+                            <option value="driver">Drivers (2026)</option>
+                            <option value="legend">Legends</option>
+                            <option value="team">Teams</option>
+                            <option value="track">Tracks</option>
+                        </select>
+
+                        <select id="sort-by" class="select">
+                            <option value="name-asc">Name (A–Z)</option>
+                            <option value="name-desc">Name (Z–A)</option>
+                            <option value="rating-desc">Rating (high → low)</option>
+                        </select>
+
+                        <input id="search" class="search" type="text" placeholder="Search..." />
+                    </div>
+
+                    <div id="catalog-grid" class="catalog-grid"></div>
+                </section>  
+
+                <div id="catalog-modal" class="modal">
+                    <div class="modal-box">
+                        <button id="modal-close" class="modal-close" type="button">&times;</button>
+                        <img id="modal-image" class="modal-image" alt="">
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-desc"></p>
+                        <p class="modal-meta" id="modal-meta"></p>
+                    </div>
+                </div>
+
+                <section id="schedule">
+                    <h1>Schedule</h1>
+
+                    <div class="race-grid">
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 1</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇦🇺</span>
+                                    <h2>Australia</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 QATAR AIRWAYS AUSTRALIAN GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">06 – 08 MAR</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/australia.avif" alt="Australia track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 2</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇨🇳</span>
+                                    <h2>China</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 HEINEKEN CHINESE GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">13 – 15 MAR</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/china.avif" alt="China track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 2</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇯🇵</span>
+                                    <h2>Japan</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 ARAMCO JAPANESE GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">27 – 29 MAR</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/japan.avif" alt="Japan track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 4</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇧🇭</span>
+                                    <h2>Bahrain</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 GULF AIR BAHRAIN GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">10 – 12 APR</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/bahrain.avif" alt="Bahrain track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 5</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇸🇦</span>
+                                    <h2>Saudi Arabia</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 STC SAUDI ARABIAN GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">17 - 19 APR</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/jeddah.avif" alt="Saudi Arabia track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 6</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇺🇸</span>
+                                    <h2>Miami</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 CRYPTO.COM MIAMI GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">01 - 03 MAY</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/miami.avif" alt="Miami track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 7</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇨🇦</span>
+                                    <h2>Canada</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 LENOVO GRAND PRIX DU CANADA 2026
+                                </p>
+                                <div class="race-date">22 - 24 MAY</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/canada.avif" alt="Canada track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 8</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇲🇨</span>
+                                    <h2>Monaco</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 LOUIS VUITTON GRAND PRIX DE MONACO 2026
+                                </p>
+                                <div class="race-date">05 - 07 JUN</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/monaco.avif" alt="Monaco track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 9</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇪🇸</span>
+                                    <h2>Barcelona-Catalunya</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 MSC CRUISES GRAN PREMIO DE BARCELONA-CATALUNYA 2026
+                                </p>
+                                <div class="race-date">12 – 14 JUN</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/barcelona.avif" alt="Barcelona track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 10</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇦🇹</span>
+                                    <h2>Austria</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 LENOVO AUSTRIAN GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">26 - 28 JUN</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/austria.avif" alt="Austria track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 11</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇬🇧</span>
+                                    <h2>United Kingdom</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 PIRELLI BRITISH GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">03 - 05 JUL</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/silverstone.avif" alt="United Kingdom track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 12</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇧🇪</span>
+                                    <h2>Belgium</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 BELGIAN GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">17 - 19 JUL</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/spa.avif" alt="Belgium track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 13</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇭🇺</span>
+                                    <h2>Hungary</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 AWS HUNGARIAN GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">24 – 26 JUL</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/hungary.avif" alt="Hungary track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 14</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇳🇱</span>
+                                    <h2>Netherlands</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 HEINEKEN DUTCH GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">21 – 23 AUG</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/zandvoort.avif" alt="Netherlands track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 15</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇮🇹</span>
+                                    <h2>Italy</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 PIRELLI GRAN PREMIO D'ITALIA 2026
+                                </p>
+                                <div class="race-date">04 – 06 SEP</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/monza.avif" alt="Italy track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 16</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇪🇸</span>
+                                    <h2>Spain</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 TAG HEUER GRAN PREMIO DE ESPAÑA 2026
+                                </p>
+                                <div class="race-date">11 – 13 SEP</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/spain.avif" alt="Spain track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 17</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇦🇿</span>
+                                    <h2>Azerbaijan</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">24 – 26 SEP</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/baku.avif" alt="Baku track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 18</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇸🇬</span>
+                                    <h2>Singapore</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">09 - 11 OCT</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/singapore.avif" alt="Singapore track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 19</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇺🇸</span>
+                                    <h2>United States</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 MSC CRUISES UNITED STATES GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">23 - 25 OCT</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/usa.avif" alt="usa track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 20</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇲🇽</span>
+                                    <h2>Mexico</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MEXICO 2026
+                                </p>
+                                <div class="race-date">30 OCT - 01 NOV</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/mexico.avif" alt="Mexico track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 21</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇧🇷</span>
+                                    <h2>Brazil</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 MSC CRUISES GRANDE PREMIO DO SAO PAULO 2026
+                                </p>
+                                <div class="race-date">06 – 08 NOV</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/interlagos.avif" alt="Brazil track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 22</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇺🇸</span>
+                                    <h2>Las Vegas</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 HEINEKEN LAS VEGAS GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">19 - 21 NOV</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/lasvegas.avif" alt="Las Vegas track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 23</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag">🇬🇧</span>
+                                    <h2>Qatar</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">27 - 29 NOV</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/lusail.avif" alt="Qatar track">
+                            </div>
+                        </article>
+                        <article class="race-card">
+                            <div class="race-left">
+                                <div class="race-top">
+                                    <span class="race-label">ROUND 24</span>
+                                </div>
+
+                                <div class="race-title">
+                                    <span class="flag"></span>
+                                    <h2>Abu Dhabi</h2>
+                                </div>
+
+                                <p class="race-subtitle">
+                                    FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2026
+                                </p>
+                                <div class="race-date">04 - 06 DEC</div>
+                            </div>
+
+                            <div class="race-right">
+                                <img class="track" src="tracks/yasmarina.avif" alt="Yas Marina circuit">
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section id="results">
+                    <h1>Results</h1>
+
+                    <div class="results-controls">
+                        <button type="button" class="tab-btn active" data-tab="drivers">Drivers</button>
+                        <button type="button" class="tab-btn" data-tab="teams">Teams</button>
+
+                        <button type="button" class="expand-btn" id="toggle-all">
+                            Show all
+                        </button>
+                    </div>
+
+                    <div class="results-card">
+                        <table class="standings" id="drivers-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Driver</th>
+                                    <th>Team</th>
+                                    <th>PTS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Lando Norris</td><td>McLaren</td><td>423</td></tr>
+                                <tr><td>2</td><td>Max Verstappen</td><td>Red Bull</td><td>421</td></tr>
+                                <tr><td>3</td><td>Oscar Piastri</td><td>McLaren</td><td>410</td></tr>
+                                <tr><td>4</td><td>George Russell</td><td>Mercedes</td><td>319</td></tr>
+                                <tr><td>5</td><td>Charles Leclerc</td><td>Ferrari</td><td>242</td></tr>
+                                <tr class="extra-row"><td>6</td><td>Lewis Hamilton</td><td>Ferrari</td><td>156</td></tr>
+                                <tr class="extra-row"><td>7</td><td>Kimi Antonelli</td><td>Mercedes</td><td>150</td></tr>
+                                <tr class="extra-row"><td>8</td><td>Alexander Albon</td><td>Williams</td><td>73</td></tr>
+                                <tr class="extra-row"><td>9</td><td>Carlos Sainz Jr.</td><td>WIlliams</td><td>64</td></tr>
+                                <tr class="extra-row"><td>10</td><td>Fernando Alonso</td><td>Aston Martin</td><td>56</td></tr>
+                                <tr class="extra-row"><td>11</td><td>Nico Hulkenberg</td><td>Kick Sauber</td><td>51</td></tr>
+                                <tr class="extra-row"><td>12</td><td>Isack Hadjar</td><td>VCARB</td><td>51</td></tr>
+                                <tr class="extra-row"><td>13</td><td>Oliver Bearman</td><td>Haas</td><td>41</td></tr>
+                                <tr class="extra-row"><td>14</td><td>Liam Lawson</td><td>VCARB</td><td>38</td></tr>
+                                <tr class="extra-row"><td>15</td><td>Esteban Ocon</td><td>Haas</td><td>38</td></tr>
+                                <tr class="extra-row"><td>16</td><td>Lance Stroll</td><td>Aston Martin</td><td>33</td></tr>
+                                <tr class="extra-row"><td>17</td><td>Yuki Tsunoda</td><td>Red Bull</td><td>33</td></tr>
+                                <tr class="extra-row"><td>18</td><td>Pierre Gasly</td><td>Alpine</td><td>22</td></tr>
+                                <tr class="extra-row"><td>19</td><td>Gabriel Bortoleto</td><td>Kick Sauber</td><td>19</td></tr>
+                                <tr class="extra-row"><td>20</td><td>Franco Colapinto</td><td>Alpine</td><td>0</td></tr>
+                                <tr class="extra-row"><td>21</td><td>Jack Doohan</td><td>Alpine</td><td>0</td></tr>
+                            </tbody>
+                        </table>
+
+                        <table class="standings hidden" id="teams-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Team</th>
+                                    <th>PTS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>McLaren</td><td>833</td></tr>
+                                <tr><td>2</td><td>Mercedes</td><td>469</td></tr>
+                                <tr><td>3</td><td>Red Bull</td><td>451</td></tr>
+                                <tr><td>4</td><td>Ferrari</td><td>398</td></tr>
+                                <tr><td>5</td><td>Williams</td><td>137</td></tr>
+                                <tr class="extra-row"><td>6</td><td>VCARB</td><td>92</td></tr>
+                                <tr class="extra-row"><td>7</td><td>Aston Martin</td><td>89</td></tr>
+                                <tr class="extra-row"><td>8</td><td>Haas</td><td>79</td></tr>
+                                <tr class="extra-row"><td>9</td><td>Kick Sauber</td><td>70</td></tr>
+                                <tr class="extra-row"><td>10</td><td>Alpine</td><td>22</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Formula 1. All rights NOT reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Full image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
